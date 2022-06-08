@@ -1,17 +1,157 @@
-
 // import form theme folder
 @import '../../../theme/base.scss';
 @import '../../../theme/variable.scss';
 
-
-// global style
-.section-one{
+// global styles start:-
+.section {
     width: 100%;
+    position: relative;
+    min-height: 100vh;
+    background-color: #fafafa;
 }
 
-.section-one-child{
+.section-one-child {
     width: 84%;
+    margin: auto;
+    position: relative;
+}
+// global styles end
+
+
+// compare page banner styles start:-
+.section-one {
+    width: 100%;
+    position: relative;
+    background-image: url(../../../assets/image/backgound-image/compare-cars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.compare-page-banner {
+    position: relative;
+    height: 400px;
+}
+
+.compare-page {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.banner-circel {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    left: -40px;
+    top: -186px;
+    background-color: #ef6728;
+    mix-blend-mode: multiply;
+    border-radius: 50%;
 }
 
 
+.compare-page h2 {
+    margin-top: 32px;
+    display: block;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .5px;
+    padding: 0px 10px;
+    text-align: left;
+}
 
+
+@media (max-width:992px) {
+    .compare-page {
+        width: 72%;
+    }
+}
+
+@media (max-width:767px) {
+    .section-one-child {
+        width: 94%;
+    }
+
+    .compare-page {
+        width: 84%;
+    }
+
+    .compare-page h2 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width:556px) {
+
+    .compare-page {
+        width: 100%;
+    }
+
+    .compare-page h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width:360px) {
+    .compare-page h2 {
+        font-size: 30px;
+    }
+}
+
+// compare page banner styles end.
+
+
+// pagination styles start:-
+.pagination {
+    width: 100%;
+    background-color: transparent;
+    padding: 0px 10px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.pagination span{
+    font-size: 14px;
+    margin-right: 6px;
+    color: #24272c;
+}
+
+.pagination .icon{
+    padding: 0px 6px;   
+}
+
+.current_page{
+    color: rgba(36, 39, 44, 0.37) !important;
+}
+
+.pagination .privious_page a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #24272c;
+}
+// pagination style end.
+
+
+// compare cards styles start:-
+.compare-cards{
+    width: 100%;
+    padding: 12px 10px 0px;
+    margin-bottom: 20px;
+}
+
+.cards{
+    background-color: #fff;
+    padding: 19px 24px 21px;
+    box-shadow: 0 1px 3px rgb(36 39 44 / 15%);
+    border-radius: 2px;
+}
+// compare cards styles end.

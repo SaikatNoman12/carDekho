@@ -4,7 +4,7 @@ import { CompareComponent } from './compare.component';
 
 const routes: Routes = [
   {
-    path:'compare',
+    path:'',
     component:CompareComponent
   }
 ];
