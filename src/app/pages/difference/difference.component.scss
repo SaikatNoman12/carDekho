@@ -55,6 +55,7 @@
         font-size: 10px;
     }
 }
+
 // pagination style end.
 
 // compare cards styles start:-
@@ -305,7 +306,7 @@
     font-weight: 400;
 }
 
-.compare-info p span a{
+.compare-info p span a {
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -317,15 +318,15 @@
 
 @media (max-width:556px) {
 
-.compare-info h1{
-    font-size: 20px;
-}
+    .compare-info h1 {
+        font-size: 20px;
+    }
 
 
-    .compare-info p{
+    .compare-info p {
         font-size: 14px;
     }
-    
+
 }
 
 // compare details end.
@@ -336,14 +337,14 @@
     }
 }
 
-.compare_details_table{
+.compare_details_table {
     width: 100%;
     background-color: #fff;
     box-shadow: 0 1px 3px rgb(36 39 44 / 15%);
     margin-bottom: 16px;
-} 
+}
 
-.compare_details_table table{
+.compare_details_table table {
     width: 100%;
     text-align: center;
     border-collapse: collapse;
@@ -353,44 +354,61 @@
     background-color: #ffffff;
 }
 
-.compare_details_table table thead tr th{
+.compare_details_table table thead tr th {
     padding: 17px 0px 17px 10px;
     font-size: 22px;
     font-weight: 500;
 }
 
-.compare_details_table 
-
-.compare_details_table table tbody tr td{
+.compare_details_table .compare_details_table table tbody tr td {
     padding: 17px 0px 17px 10px;
     font-size: 16px;
     font-weight: 500;
 }
 
-.compare_details_table table thead tr th:nth-child(1){
+.compare_details_table table thead tr th:nth-child(1) {
     text-align: left;
     padding: 10px 0px 14px 20px !important;
-    width: 19%;
+    width: 23%;
 }
 
-.compare_details_table table tbody tr:nth-child(odd){
+.compare_details_table table thead tr th:nth-child(2) {
+    width: 38.5%;
+}
+
+.compare_details_table table tbody tr:nth-child(odd) {
     background: #fafbfc;
 }
-.compare_details_table table tbody tr:nth-child(even){
+
+.compare_details_table table tbody tr:nth-child(even) {
     background-color: #fff;
 }
 
-.compare_details_table table tbody tr td:nth-child(1){
-    border-right: 1px solid rgba(36,39,44,.15);
+.compare_details_table table tbody tr td:nth-child(1) {
+    border-right: 1px solid rgba(36, 39, 44, .15);
     font-size: 16px;
     font-weight: 400;
-    width: 19%;
+    width: 23%;
+    // position: relative;
     text-align: left;
-    color: rgba(36,39,44,.5);
+    color: rgba(36, 39, 44, .5);
     padding: 10px 0px 14px 20px !important;
 }
 
-.compare_details_table table tbody tr td{
+// .compare_details_table table tbody tr td:nth-child(2) {
+//     width: 38.5%;
+//     position: relative;
+
+// }
+
+.compare_details_table table tbody tr td:nth-child(3) {
+    width: 38.5%;
+    position: relative;
+
+}
+
+
+.compare_details_table table tbody tr td {
     font-size: 16px;
     color: #24272c;
     padding: 17px 0px 17px 10px;
@@ -398,65 +416,209 @@
 }
 
 
-.compare_details_table table tbody tr td a{
+.compare_details_table table tbody tr td a {
     display: block;
     text-decoration: none;
     color: #2176ae !important;
     margin-top: 4px;
 }
 
-.compare_details_table table tbody tr td  img{
+.compare_details_table table tbody tr td img {
     max-width: 3%;
 }
 
-.car-rating i{
+.car-rating i {
     margin-left: 1px;
     color: #ffa236;
     font-size: 18px;
 }
 
-.base-review{
+.base-review {
     font-size: 13px;
     justify-content: center;
     display: flex;
     margin-top: 4px;
 }
 
-.base-review a{
+.base-review a {
     margin-top: 0px !important;
     margin-left: 4px;
 }
 
-.click{
+.click {
     font-weight: 500;
 }
 
+.check {
+    color: green;
+    font-size: 24px;
+}
+
 @media (max-width:767px) {
-    .car-detail{
+    .car-detail {
+        display: none;
+    }
+
+    .compare_details_table table tbody tr td:nth-child(1) {
+        display: none;
+    }
+    .compare_details_table table thead tr th:nth-child(1) {
+        display: none;
+    }
+    .compare_details_table table tbody tr td:nth-child(2) {
+        width: 50%;
+        border-right: 1px solid rgba(36, 39, 44, .15);
+        
+    }
+    .compare_details_table table tbody tr td:nth-child(3) {
+        width: 50%;
+        // border-left: 1px solid rgba(36, 39, 44, .15);
+    }
+
+}
+
+@media (max-width:556px) {
+    .compare_details_table table tbody tr td img {
+        max-width: 6%;
+    }
+
+    .compare_details_table table thead tr th {
+        font-size: 20px;
+    }
+
+    .compare_details_table table tbody tr td {
+        font-size: 13px;
+    }
+
+    .car-rating i {
+        font-size: 15px;
+    }
+
+    .base-review {
+        font-size: 11px;
+    }
+
+}
+
+
+@media (max-width:992px) {
+    .engine-name i {
         display: none;
     }
 }
 
-@media (max-width:556px) {
-    .compare_details_table table tbody tr td  img{
-        max-width: 6%;
-    } 
-    
-    .compare_details_table table thead tr th{
-        font-size: 20px;
+@media (max-width:767px) {
+    .engine-name {
+        font-size: 18px !important;
     }
 
-    .compare_details_table table tbody tr td{
+    .engine {
+        font-size: 14px !important;
+    }
+}
+
+
+// new comparison card style start:-
+.new-comparison-cards {
+    width: 100%;
+    padding: 16px;
+}
+
+.new-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.new-compare-card {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    padding: 12px 8px 8px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.new-card-detial {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 14px;
+}
+
+.new-card-detial img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.new-card-detial h5,
+p {
+    font-size: 14px;
+}
+
+.new-card-detial h5 {
+    color: #434a54;
+    font-weight: 500;
+}
+
+.new-card-detial p {
+    color: #2e3239;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.new-card-add-btn {
+    padding-top: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+.new-card-add-btn a {
+    font-size: 16px;
+    color: #2176ae;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media (max-width:992px) {
+    .new-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .new-card-detial {
+        grid-template-columns: 1fr;
+    }
+
+    .new-card-info {
+        text-align: center;
+    }
+
+    .new-card-detial p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:556px) {
+    .new-card-detial h5 {
         font-size: 13px;
     }
     
-    .car-rating i{
-        font-size: 15px;
+    .new-card-detial p {
+        font-size: 12px;
     }
 
-    .base-review{
-        font-size: 11px;
+    .new-card-add-btn a {
+        font-size: 13px;
     }
-    
-    
 }
+
+
+
+
+
+// new comparison card style end.
