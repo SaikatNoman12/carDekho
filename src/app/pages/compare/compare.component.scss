@@ -15,6 +15,7 @@
     margin: auto;
     position: relative;
 }
+
 // global styles end
 
 
@@ -119,39 +120,220 @@
     justify-content: left;
 }
 
-.pagination span{
+.pagination span {
     font-size: 14px;
     margin-right: 6px;
     color: #24272c;
 }
 
-.pagination .icon{
-    padding: 0px 6px;   
+.pagination .icon {
+    padding: 0px 6px;
 }
 
-.current_page{
+.current_page {
     color: rgba(36, 39, 44, 0.37) !important;
 }
 
-.pagination .privious_page a{
+.pagination .privious_page a {
     cursor: pointer;
     text-decoration: none;
     color: #24272c;
 }
+
 // pagination style end.
 
 
 // compare cards styles start:-
-.compare-cards{
+.compare-cards {
     width: 100%;
     padding: 12px 10px 0px;
     margin-bottom: 20px;
 }
 
-.cards{
+
+.card-item{
     background-color: #fff;
     padding: 19px 24px 21px;
     box-shadow: 0 1px 3px rgb(36 39 44 / 15%);
     border-radius: 2px;
+
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.card {
+    border: 1px solid rgba(36, 39, 44, .15);
+}
+
+.adding-image{
+    padding: 16px;
+}
+
+.d-none{
+    display: none;
+}
+
+.adding-image .plus{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    font-size: 34px;
+    color: rgba(36, 39, 44, 0.406);
+    margin: 8px auto 10px;
+    border: 1px dashed rgba(36, 39, 44, 0.406);
+}
+
+.adding-image h5{
+    text-align: center;
+    margin: 8px 0px 26px;
+    font-size: 15px;
+    color: rgba(36, 39, 44, 0.406);
+}
+
+
+// select car style start:-
+.select-car{
+    padding: 16px;
+    // text-align: center;
+}
+
+.full{
+    width: 100%;
+}
+
+.material-selector{
+    font-size: 22px;
+    padding: 100px 10px 10px 10px;
+}
+
+.image{
+    position: relative;
+    width: 100%;
+}
+
+.image .cross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    color: rgb(252, 81, 81);
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+}
+// select car style end.
+
+
+// selected car style start:-
+.selected-cars {
+    padding: 16px;
+}
+.selected-cars h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #24272c;
+}
+
+.selected-cars h3 span a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #24272c;
+    padding-left: 6px;
+}
+
+.selected-cars h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.selected-cars p{
+    font-size: 12px;
+     font-weight: 300;
+}
+// selected car style start
+
+.compare-btn{
+    margin-top: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.compare-btn .btn{
+    text-decoration: none ;
+    background-color: #ef6728 ;
+    color: #fff ;
+    padding: 14px 66px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+@media (max-width:1200px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:640px) {
+    .cards {
+        grid-gap: 10px;
+    }
+
+    .select-car{
+        padding: 6px;
+    }
+
+    .card-three{
+        display: none;
+    }
+}
+
+@media (max-width:640px) {
+    .cards {
+        grid-gap: 10px;
+    }
+
+    .select-car{
+        padding: 6px;
+    }
+}
+
+@media (max-width:556px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:360px) {
+    .compare-btn .btn{
+        padding: 14px 46px;
+        font-size: 16px;
+    }
+}
+
+
+
+
 // compare cards styles end.
+
+
+
+@media (max-width:1340px) {
+    .section-one-child {
+        width: 96%;
+    }    
+}
+

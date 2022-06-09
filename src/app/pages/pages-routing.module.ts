@@ -15,6 +15,11 @@ const routes: Routes = [
         path:'',
         loadChildren: () => import('./compare/compare.module').then(m => m.CompareModule)
       },
+      {
+        path:'difference',
+        loadChildren: () => import('./difference/difference.module').then(m => m.DifferenceModule)
+      },
+      
     ]
   }
 ];

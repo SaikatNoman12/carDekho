@@ -1,3 +1,4 @@
+import { MaterialModule } from './../../materials/materials.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,7 +12,8 @@ import { CompareComponent } from './compare.component';
   ],
   imports: [
     CommonModule,
-    CompareRoutingModule
+    CompareRoutingModule,
+    MaterialModule
   ]
 })
 export class CompareModule { }
