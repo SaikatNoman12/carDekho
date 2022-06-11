@@ -43,10 +43,12 @@ header design start:-
 }
 
 // header top area style start:-
-.top-fixed{
+.header-bottom-fixed{
     position: fixed;
-    top: 0%;
-    z-index: 1111111111111111111111111;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s linear;
+    z-index: 1000000;
 }
 
 .top-area {

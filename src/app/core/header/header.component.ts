@@ -7,11 +7,12 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  headerFixed: any = false;
+  headerFixed = false;
 
   constructor() { }
 
   ngOnInit(): void {
+    window.scrollBy(0,0);
   }
 
 
@@ -19,16 +20,15 @@ export class HeaderComponent implements OnInit {
   HEADER FIXED CONTROL
   */
 
-  @HostListener("window:scroll") headerFixedControl() {
-    if (window.scrollY > 600) {
-      this.headerFixed = true;
-
-    }
-    else {
+  @HostListener('window:scroll') 
+  headerFixedMethod(){
+    if(window.scrollY > 300){
+      this.headerFixed = false;
+    }else{
       this.headerFixed = false;
     }
-
     console.log('scrolling');
+
   }
 
 
