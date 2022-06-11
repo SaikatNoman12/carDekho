@@ -1,3 +1,4 @@
+import { CompareService } from './../../services/compare.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DifferenceComponent implements OnInit {
 
-  constructor() { }
+  cars:any = [];
+
+  constructor(
+    private compareService:CompareService
+
+  ) { }
+
+
 
   ngOnInit(): void {
+    this.cars = this.compareService.getCompareCars()
   }
+ 
 
 }
