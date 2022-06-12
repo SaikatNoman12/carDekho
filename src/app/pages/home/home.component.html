@@ -1,1 +1,259 @@
-<p>home works!</p>
+<section class="section">
+
+    <div class="slider">
+        <div class="image">
+            <a href="#">
+                <img src="../../../assets/image/slider-image/CD-1686x548-copy.webp" alt="">
+            </a>
+        </div>
+        <div class="search-box">
+            <div class="search-card">
+                <h1>Find your right car</h1>
+                <div class="search-button">
+                    <a (click)="onShowBrand()" value="brand" class="btn">New Car</a>
+                    <a (click)="onShowModel()" class="btn">Used Car</a>
+                </div>
+            </div>
+
+            <!-- select cars one -->
+            <div class="select-cars" *ngIf="brand">
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button class="radio" value="1">By Budget</mat-radio-button>
+                    &nbsp;&nbsp;
+                    <mat-radio-button class="radio" value="2">By Brand</mat-radio-button>
+                </mat-radio-group>
+                <div class="selectArea">
+                    <mat-form-field class="block" appearance="outline">
+                        <mat-label>Select Budget</mat-label>
+                        <mat-select>
+                            <mat-option value="one">1 - 5 Lakh</mat-option>
+                            <mat-option value="two">5 - 10 Lakh</mat-option>
+                            <mat-option value="two">10 - 15 Lakh</mat-option>
+                            <mat-option value="two">15 - 20 Lakh</mat-option>
+                            <mat-option value="two">20 - 25 Lakh</mat-option>
+                            <mat-option value="two">25 - 30 Lakh</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="block" appearance="outline">
+                        <mat-label>All Vehicle Type</mat-label>
+                        <mat-select>
+                            <mat-option value="two">Sedan</mat-option>
+                            <mat-option value="one">SUV</mat-option>
+                            <mat-option value="one">MUV</mat-option>
+                            <mat-option value="one">Luxury</mat-option>
+                            <mat-option value="one">Super Luxury</mat-option>
+                            <mat-option value="one">Hybrid</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="select_and_search_btn">
+                    <a class="select-search" href="#">Search</a>
+                </div>
+                <div class="advanced-search">
+                    <a href="#">Advanced Search <i class="las la-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- select cars-2 -->
+            <div class="select-cars" *ngIf="model">
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button class="radio" value="1">By Budget</mat-radio-button>
+                    &nbsp;&nbsp;
+                    <mat-radio-button class="radio" value="2">By Model</mat-radio-button>
+                </mat-radio-group>
+                <div class="selectArea">
+                    <mat-form-field class="block" appearance="outline">
+                        <mat-label>Select Budget</mat-label>
+                        <mat-select>
+                            <mat-option value="one">1 - 5 Lakh</mat-option>
+                            <mat-option value="two">5 - 10 Lakh</mat-option>
+                            <mat-option value="two">10 - 15 Lakh</mat-option>
+                            <mat-option value="two">15 - 20 Lakh</mat-option>
+                            <mat-option value="two">20 - 25 Lakh</mat-option>
+                            <mat-option value="two">25 - 30 Lakh</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="block" appearance="outline">
+                        <mat-label>Select City</mat-label>
+                        <mat-select>
+                            <mat-option value="two">Ahmedabad</mat-option>
+                            <mat-option value="one">South Chennai</mat-option>
+                            <mat-option value="one">North Chennai</mat-option>
+                            <mat-option value="one">Nodia</mat-option>
+                            <mat-option value="one">Faridabad</mat-option>
+                            <mat-option value="one">Modinagar</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="select_and_search_btn">
+                    <a class="select-search" href="#">Search</a>
+                </div>
+                <div class="advanced-search">
+                    <a href="#">Advanced Search <i class="las la-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Recommended Cars start  -->
+    <div class="section-one-child">
+        <div class="car-cards">
+            <h1>Recommended Cars For You</h1>
+
+            <div class="cards">
+
+                <ng-container *ngFor="let RecommendedCar of RecommendedCars">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="{{RecommendedCar.img}}" alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">{{RecommendedCar.name}}</a></h3>
+                            <h4><i class="las la-rupee-sign"></i>{{RecommendedCar.price}}*</h4>
+                            <div class="card-button">
+                                <a href="#">{{RecommendedCar.offer}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+
+            </div>
+        </div>
+    </div>
+    <!-- Recommended Cars end  -->
+
+    <!-- the most searched cars start -->
+    <div class="section-one-child">
+        <div class="car-cards">
+            <h1>The most searched cars</h1>
+            <div class="different-type-cars">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>
+                                Hatchback
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                SUV
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                MUV
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                Luxury
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+
+                <ng-container *ngFor="let mostSearchedCar of mostSearchedCars">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="{{mostSearchedCar.img}}" alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">{{mostSearchedCar.name}}</a></h3>
+                            <h4><i class="las la-rupee-sign"></i>{{mostSearchedCar.price}}*</h4>
+                            <div class="card-button">
+                                <a href="#">{{mostSearchedCar.offer}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+
+            </div>
+        </div>
+    </div>
+    <!-- the most searched cars end -->
+
+
+    <!-- popular brand start  -->
+    <div class="section-one-child">
+        <div class="car-cards">
+            <h1>Popular Brands</h1>
+
+            <div class="popular-brands">
+
+                <ng-container *ngFor="let popularBrand of popularBrandsName">
+                    <div class="card brand">
+                        <div class="card-image brand-image">
+                            <a href="#">
+                                <img src="{{popularBrand.img}}" alt="">
+                                
+                                <h4>Maruti</h4>
+                            </a>
+                        </div>
+                    </div>
+                </ng-container>
+
+            </div>
+            <div class="all-brands">
+                <h5>
+                    <a href="#">View All Brands</a>
+                </h5>
+            </div>
+        </div>
+    </div>
+    <!-- popular brand end  -->
+
+
+    <!-- upcoming cars start  -->
+    <div class="section-one-child">
+        <div class="car-cards">
+            <h1>Upcoming Cars</h1>
+
+            <div class="cards">
+
+                <ng-container *ngFor="let upComingCar of upComingCars">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="{{upComingCar.img}}" alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">{{upComingCar.name}}</a></h3>
+                            <h4>
+                                <i class="las la-rupee-sign"></i>
+                                {{upComingCar.price}}
+                                <span class="estimated-price">Estimated Price</span>
+                            </h4>
+                            <p class="car-launch-date">
+                                {{upComingCar.launch}}
+                            </p>
+                            <div class="card-button">
+                                <a href="#">{{upComingCar.offer}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- upcoming cars end  -->
+
+
+    <br><br><br>
+
+</section>

@@ -109,66 +109,67 @@ export class CompareComponent implements OnInit {
             data: [
                "STD Opt",
                "LXI Opt",
-               "Dzire"
+               "Dzire",
+               "VXI",
             ]
          },
          {
             parent: '2',
             data: [
-               "VXI",
-               "VXI Plus",
-               "LXI Opt S-CNG",
+               "STD Opt",
                "LXI Opt",
-               "Dzire"
+               "Dzire",
+               "VXI",
    
             ]
          },
          {
             parent: '3',
             data: [
-               "VXI",
-               "VXI Plus",
+               "STD Opt",
+               "LXI Opt",
                "Dzire",
-               "SUV"
+               "VXI",
    
             ]
          },
          {
             parent: '4',
             data: [
-               "VXI",
-               "VXI Plus",
-               "LXI Opt S-CNG",
+               "STD Opt",
+               "LXI Opt",
                "Dzire",
-               "SUV"
+               "VXI",
    
             ]
          },
          {
             parent: '5',
             data: [
-               "VXI",
-               "VXI Plus",
+               "STD Opt",
+               "LXI Opt",
                "Dzire",
-               "SUV"
+               "VXI",
    
             ]
          },
          {
             parent: '6',
             data: [
+               "STD Opt",
+               "LXI Opt",
+               "Dzire",
                "VXI",
-               "VXI Plus",
-               "LXI Opt S-CNG",
    
             ]
          },
          {
             parent: '7',
             data: [
+               "STD Opt",
+               "LXI Opt",
+               "Dzire",
                "VXI",
-               "VXI Plus",
-   
             ]
          }
       ];
@@ -196,7 +197,7 @@ export class CompareComponent implements OnInit {
             "modelUrl":"/carmodels/Maruti/Maruti_Alto_800",
             "modelDisplayName":"Maruti Alto 800",
             "topSelling":false,
-            "image":"https://stimg.cardekho.com/images/carexteriorimages/360x240/Maruti/Alto-800/7072/1650542631570/front-left-side-47.jpg",
+            "image":"https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/7897/1647502017122/front-left-side-47.jpg",
             "shortModelName":"Alto 800",
             "price_orp":"3.77 Lakh",
             "onRoadPrice":376784,
@@ -234,7 +235,7 @@ export class CompareComponent implements OnInit {
             "modelUrl":"/carmodels/Maruti/Maruti_Alto_800",
             "modelDisplayName":"Maruti Alto 800",
             "topSelling":false,
-            "image":"https://mcmscache.epapr.in/post_images/website_300/post_18234677/thumb.jpg",
+            "image":"https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Swift/8378/1644834798148/front-left-side-47.jpg",
             "shortModelName":"Alto 800",
             "price_orp":"4.53 Lakh",
             "onRoadPrice":452616,
@@ -272,7 +273,7 @@ export class CompareComponent implements OnInit {
             "modelUrl":"/carmodels/Maruti/Maruti_Alto_800",
             "modelDisplayName":"Maruti Alto 800",
             "topSelling":false,
-            "image":"https://imgd.aeplcdn.com/0x0/n/cw/ec/45691/marutisuzuki-dzire-right-front-three-quarter8.jpeg",
+            "image":"https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Baleno/8674/1645684614616/front-left-side-47.jpg",
             "shortModelName":"Alto 800",
             "price_orp":"4.74 Lakh",
             "onRoadPrice":474018,
@@ -310,7 +311,7 @@ export class CompareComponent implements OnInit {
             "modelUrl":"/carmodels/Maruti/Maruti_Alto_800",
             "modelDisplayName":"Maruti Alto 800",
             "topSelling":true,
-            "image":"https://mcmscache.epapr.in/post_images/website_300/post_17689734/thumb.jpg",
+            "image":"https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/i20/6986/1604567349336/front-left-side-47.jpg",
             "shortModelName":"Alto 800",
             "price_orp":"4.88 Lakh",
             "onRoadPrice":488461,
@@ -320,7 +321,7 @@ export class CompareComponent implements OnInit {
             "modelName":"Maruti Suzuki SUV",
             "city_mileage":20,
             "name":"Maruti Alto 800 VXI Plus",
-            "variantName":"SUV",
+            "variantName":"VXI",
             "carVariantCentralId":"7277",
             "onRoadPriceInIndianFormat":"4,88,461",
             "priceRange":"3.39 - 5.03 Lakh",
@@ -470,7 +471,11 @@ export class CompareComponent implements OnInit {
          console.log('selected model 1', this.selectedCar4);
       }
    
+
       onCompare() {
+   
+         this.compareService.resetCompareCars();
+
          if(this.selectedCar1){
             this.compareService.setCompareCars(this.selectedCar1)
          }

@@ -3,7 +3,6 @@
 
 
 // global css start:-
-
 .section {
     width: 100%;
     position: relative;
@@ -30,7 +29,6 @@
         width: 100%;
     }
 }
-
 // global css end
 
 
@@ -216,7 +214,6 @@ header design start:-
     .search {
         height: 40px;
     }
-    
 
     .search-area .search-input {
         width: 88%;
@@ -298,8 +295,6 @@ header design start:-
     box-shadow: 0 3px 6px 0 rgb(36 39 44 / 10%);
 }
 
-
-
 .bottom-area {
     width: 100%;
     display: flex;
@@ -359,6 +354,8 @@ header design start:-
     align-items: center;
     position: relative;
     font-size: 16px;
+    cursor: pointer;
+    z-index: 1111;
     font-weight: 400;
     color: rgba(36, 39, 44, .87);
     text-decoration: none;
@@ -451,7 +448,23 @@ header design start:-
         padding-right: 16px;
     }
 
+}
 
+@media (max-width:556px) {
+
+    
+    .top-area{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .nav-item .toggle {
+        padding-left: 8px;
+    }
+
+    .location{
+        padding-right: 8px;
+    }
 }
 
 // header bottom area style end.

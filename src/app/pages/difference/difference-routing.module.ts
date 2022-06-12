@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { DifferenceComponent } from './difference.component';
 
 const routes: Routes = [
-  {
-    path:'',
-    component:DifferenceComponent
-  }
+  // {
+  //   path:'',
+  //   component:DifferenceComponent
+  // }
 ];
 
 @NgModule({

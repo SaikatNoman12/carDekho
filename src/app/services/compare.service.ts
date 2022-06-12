@@ -9,6 +9,10 @@ export class CompareService {
 
   constructor() { }
 
+  resetCompareCars(){
+    this.compareCars = [];
+  }
+
   setCompareCars(car: any) {
       this.compareCars.push(car);
   }
