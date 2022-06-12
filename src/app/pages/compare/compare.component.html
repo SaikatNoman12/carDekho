@@ -112,7 +112,7 @@
                                 </div>
                                 <h5>add card</h5>
                             </div>
-                            <div class="image" *ngIf="selectedCar1"> 
+                            <div class="image" *ngIf="selectedCar1">
                                 <img [src]="selectedCar1.image" alt="">
                                 <a class="cross" href="#">x</a>
                             </div>
@@ -133,8 +133,9 @@
                             <mat-form-field class="full" appearance="outline">
                                 <mat-label>Select Variant</mat-label>
                                 <mat-select (selectionChange)="onVariantChange($event)" #select>
-                                    
-                                    <mat-option *ngFor="let variant of selectedVariant.data" [value]="variant">{{variant}}</mat-option>
+
+                                    <mat-option *ngFor="let variant of selectedVariant.data" [value]="variant">
+                                        {{variant}}</mat-option>
 
                                 </mat-select>
                             </mat-form-field>
@@ -171,12 +172,13 @@
                             <mat-form-field class="full" appearance="outline">
                                 <mat-label>Select Variant</mat-label>
                                 <mat-select (selectionChange)="onVariantChange2($event)" #select>
-                                    
-                                    <mat-option *ngFor="let variant of selectedVariant2.data" [value]="variant">{{variant}}</mat-option>
+
+                                    <mat-option *ngFor="let variant of selectedVariant2.data" [value]="variant">
+                                        {{variant}}</mat-option>
 
                                 </mat-select>
                             </mat-form-field>
-                            
+
                         </div>
                     </div>
 
@@ -209,8 +211,9 @@
                             <mat-form-field class="full" appearance="outline">
                                 <mat-label>Select Variant</mat-label>
                                 <mat-select (selectionChange)="onVariantChange3($event)" #select>
-                                    
-                                    <mat-option *ngFor="let variant of selectedVariant.data" [value]="variant">{{variant}}</mat-option>
+
+                                    <mat-option *ngFor="let variant of selectedVariant.data" [value]="variant">
+                                        {{variant}}</mat-option>
 
                                 </mat-select>
                             </mat-form-field>
@@ -246,8 +249,9 @@
                             <mat-form-field class="full" appearance="outline">
                                 <mat-label>Select Variant</mat-label>
                                 <mat-select (selectionChange)="onVariantChange4($event)" #select>
-                                    
-                                    <mat-option *ngFor="let variant of selectedVariant4.data" [value]="variant">{{variant}}</mat-option>
+
+                                    <mat-option *ngFor="let variant of selectedVariant4.data" [value]="variant">
+                                        {{variant}}</mat-option>
 
                                 </mat-select>
                             </mat-form-field>
