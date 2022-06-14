@@ -17,6 +17,7 @@
 
             <!-- select cars one -->
             <div class="select-cars" *ngIf="brand">
+
                 <mat-radio-group aria-label="Select an option">
                     <mat-radio-button class="radio" value="1">By Budget</mat-radio-button>
                     &nbsp;&nbsp;
@@ -62,6 +63,8 @@
                     <mat-radio-button class="radio" value="2">By Model</mat-radio-button>
                 </mat-radio-group>
                 <div class="selectArea">
+
+
                     <mat-form-field class="block" appearance="outline">
                         <mat-label>Select Budget</mat-label>
                         <mat-select>
@@ -198,8 +201,8 @@
                         <div class="card-image brand-image">
                             <a href="#">
                                 <img src="{{popularBrand.img}}" alt="">
-                                
-                                <h4>Maruti</h4>
+
+                                <h4>{{popularBrand.name}}</h4>
                             </a>
                         </div>
                     </div>
@@ -250,8 +253,141 @@
             </div>
         </div>
     </div>
-
     <!-- upcoming cars end  -->
+
+
+    <!-- trusted used cars by budget start -->
+    <div class="section-one-child">
+        <div class="car-cards">
+            <h1>Trusted used cars by budget</h1>
+            <div class="different-type-cars">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>
+                                CarDekho Used
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                Cars1-5 LAKH
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                5-10 LAKH
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                10-15 LAKH
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+
+                <ng-container *ngFor="let trustedUsedCar of trustedUsedCars">
+                    <div class="card">
+                        <div class="card-image trusted-car">
+                            <a href="#">
+                                <img src="{{trustedUsedCar.img}}" alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">{{trustedUsedCar.name}}</a></h3>
+                            <h4><i class="las la-rupee-sign"></i>{{trustedUsedCar.price}}*</h4>
+                            <div class="card-button">
+                                <span>
+                                    {{trustedUsedCar.kms}}
+                                </span>
+                                <span class="type">
+                                    {{trustedUsedCar.fuelType}}
+                                </span>
+                                <span class="type">
+                                    {{trustedUsedCar.city}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+
+            </div>
+        </div>
+    </div>
+    <!-- trusted used cars by budget end -->
+
+
+    <!-- recommender cars start -->
+    <div class="section-one-child">
+        <div class="recommender">
+            <div class="recommander-child">
+
+                <!-- image animation group start -->
+                <div class="image-group">
+                    <img class=" man" src="../../../assets/image/mans/man-thinking.webp" alt="">
+
+                    <img class="image-group-image image-brand" src="../../../assets/image/mans/Brand_.svg" alt="">
+
+                    <img class="image-group-image budget" src="../../../assets/image/mans/Budget_.svg" alt="">
+
+                    <img class="image-group-image circle" src="../../../assets/image/mans/circle.svg" alt="">
+
+                    <img class="image-group-image mileage" src="../../../assets/image/mans/Mileage_.svg" alt="">
+
+                    <img class="image-group-image question" src="../../../assets/image/mans/question.svg" alt="">
+
+                    <img class="image-group-image seats" src="../../../assets/image/mans/Seats_.svg" alt="">
+
+                    <img class="image-group-image star-one" src="../../../assets/image/mans/star.svg" alt="">
+
+                    <img class="image-group-image star-two" src="../../../assets/image/mans/star.svg" alt="">
+
+                    <img class="image-group-image star-three" src="../../../assets/image/mans/star.svg" alt="">
+                    <img class="image-group-image star-four" src="../../../assets/image/mans/star.svg" alt="">
+
+                    <img class="image-group-image feature" src="../../../assets/image/mans/Feature_.svg" alt="">
+                </div>
+                <!-- image animation group end -->
+
+
+                <div class="recommander-child-one">
+                    <div class="recommender-child-one-child">
+                        <div class="recommender-child-one-image">
+                        <img src="../../../assets/image/mans/Recommender-logo.svg" alt="">
+                    </div>
+                    <div class="recommender-child-one-details">
+                        <h2 class="head-title">
+                            Not Sure, Which car to buy?
+                        </h2>
+                        <p class="dream-car">
+                            Let us help you find the dream car
+                        </p>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="recommended-child-two">
+                    <div class="recommended-child-two-btn">
+                        <a href="#">
+                            <span>Show best car</span>
+                            <i class="las la-angle-down"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- recommended cars end -->
 
 
     <br><br><br>

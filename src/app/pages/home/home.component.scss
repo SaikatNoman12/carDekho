@@ -202,7 +202,7 @@
 }
 
 
-.car-cards h1{
+.car-cards h1 {
     margin-bottom: 24px;
     color: #24272c;
     font-size: 23px;
@@ -210,54 +210,54 @@
 }
 
 
-.cards{
+.cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 }
 
 
-.card{
+.card {
     width: 100%;
     overflow: hidden;
     border-radius: 2px;
     box-shadow: rgb(36 39 44 / 15%) 0px 1px 3px;
 }
 
-.card .card-image img{
+.card .card-image img {
     width: 100%;
     height: auto;
 }
 
-.card-details{
+.card-details {
     padding: 13px 16px 16px;
 }
 
-.card-details h3{
+.card-details h3 {
     font-size: 16px;
     margin-bottom: 4px;
-} 
+}
 
-.card-details h3 a{
+.card-details h3 a {
     color: #24272c;
     cursor: pointer;
     text-decoration: none;
-} 
+}
 
 
 
-.card-details h4{
+.card-details h4 {
     font-size: 18px;
     color: #24272c;
     margin-bottom: 0px;
-} 
+}
 
-.card-button{
+.card-button {
     width: 100%;
     margin-top: 14px;
 }
 
-.card-button a{
+.card-button a {
     display: block;
     text-decoration: none;
     border: 1px solid #f75d34;
@@ -269,24 +269,24 @@
     padding: 10px 2px;
 }
 
-@media (max-width:992px){
-    .cards{
+@media (max-width:992px) {
+    .cards {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width:767px){
-    .card-details h3{
+@media (max-width:767px) {
+    .card-details h3 {
         font-size: 14px;
-    } 
-    
-    .card-details h4{
+    }
+
+    .card-details h4 {
         font-size: 16px;
-    } 
+    }
 }
 
-@media (max-width:556px){
-    .cards{
+@media (max-width:556px) {
+    .cards {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -295,14 +295,14 @@
 different types of cars
 */
 
-.different-type-cars{
+.different-type-cars {
     position: relative;
     margin-bottom: 20px;
-    border-bottom: 1px solid rgba(36,39,44,.15);
+    border-bottom: 1px solid rgba(36, 39, 44, .15);
     display: inline-block;
 }
 
-.different-type-cars ul{
+.different-type-cars ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -320,7 +320,7 @@ different types of cars
     bottom: -1px;
 }
 
-.different-type-cars ul li:last-child{
+.different-type-cars ul li:last-child {
     margin-right: 0px;
 }
 
@@ -345,8 +345,9 @@ different types of cars
     color: rgba(36, 39, 44, .87);
     text-decoration: none;
 }
+
 .different-type-cars ul li a:hover {
-    color: #f75d34;    
+    color: #f75d34;
 }
 
 
@@ -358,29 +359,30 @@ different types of cars
     .different-type-cars ul li {
         margin-right: 18px;
     }
-    
+
 }
+
 // car cards style end.
 
 
 // popular brands style start:-
-.popular-brands{
+.popular-brands {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 24px;
 }
 
-.brand{
+.brand {
     padding: 20px;
 }
 
-.brand .brand-image a{
+.brand .brand-image a {
     text-decoration: none;
     cursor: pointer;
 }
 
 
-.brand .brand-image a h4{
+.brand .brand-image a h4 {
     color: #24272c;
     text-align: center;
     margin-top: 6px;
@@ -390,18 +392,18 @@ different types of cars
 }
 
 
-.all-brands{
+.all-brands {
     margin-top: 30px;
-    border-top: 1px solid rgba(36,39,44,.15);
+    border-top: 1px solid rgba(36, 39, 44, .15);
     width: 100%;
     padding: 20px 0px 0px 0px;
 }
 
-.all-brands h5{
+.all-brands h5 {
     margin: 0px;
 }
 
-.all-brands h5 a{
+.all-brands h5 a {
     font-size: 14px;
     color: #24272c;
     font-weight: 500;
@@ -411,36 +413,562 @@ different types of cars
 }
 
 @media (max-width:992px) {
-    .popular-brands{
+    .popular-brands {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 @media (max-width:556px) {
-    .popular-brands{
+    .popular-brands {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
 
-    .brand{
+    .brand {
         padding: 10px;
     }
 }
+
 // popular brands style end.
 
 
 // upcoming cars style start:-
 
-.estimated-price{
+.estimated-price {
     font-size: 11px;
     margin-left: 5px;
-    color: rgba(36,39,44,.5);
+    color: rgba(36, 39, 44, .5);
 }
 
-.car-launch-date{
+.car-launch-date {
     margin-bottom: 0px;
     margin-top: 16px;
     font-size: 12px;
-    color: rgba(36,39,44,.5);
+    color: rgba(36, 39, 44, .5);
 }
 
-// upcoming cars style end
+// upcoming cars style end.
+
+
+// trusted used cars by budget style start:-
+.card-button span {
+    color: rgba(36, 39, 44, .5);
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+}
+
+.card-button .type {
+    margin-left: 16px;
+}
+
+.card-button .type {
+    margin-left: 16px;
+}
+
+.card-button .type::after {
+    content: '';
+    background: rgba(36, 39, 44, .5);
+    border-radius: 50%;
+    border-radius: 50%;
+    height: 3px;
+    left: -11px;
+    position: absolute;
+    top: 6px;
+    width: 3px;
+}
+
+.card .trusted-car a img {
+    height: 200px !important;
+    object-fit: cover;
+}
+
+// trusted used cars by budget style end.
+
+
+// recommender car design star:-
+.recommender {
+    width: 100%;
+    padding: 16px 16px 16px 16px;
+    height: 230px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.recommander-child {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    height: 100%;
+}
+
+.image-group {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+
+.image-group-image {
+    position: absolute;
+}
+
+.image-group .man {
+    width: 120px;
+    height: 149px;
+    position: relative;
+    bottom: -6px;
+}
+
+.image-group .circle {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.seats {
+    left: -24px;
+    top: 23px;
+    transform: scale(1.4);
+    animation: seats .8s ease-in-out .6s infinite alternate;
+}
+
+@keyframes seats {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.6);
+    }
+
+}
+
+.image-brand {
+    left: -19px;
+    position: absolute;
+    top: -12px;
+    animation: image-brand 1s ease-in-out .4s infinite alternate;
+    transform: scale(1);
+}
+
+@keyframes image-brand {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.budget {
+    left: 24px;
+    position: absolute;
+    top: -58px;
+    animation: budget 1.2s ease-in-out .8s infinite alternate;
+    transform: scale(1);
+}
+
+@keyframes budget {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.question {
+    left: 46%;
+    position: absolute;
+    top: -16px;
+    animation: question 1s ease-in-out 1s infinite alternate;
+    transform: scale(1.5) translateX(-46%);
+}
+
+@keyframes question {
+    0% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+.star-one {
+    left: 21px;
+    position: absolute;
+    top: 12px;
+    transform: scale(1);
+}
+
+.star-two {
+    left: 50%;
+    transform: scale(1.6) translateX(-50%);
+    position: absolute;
+    top: -42px;
+    // transform: ;
+    width: 5px;
+}
+
+.mileage {
+    left: 78%;
+    position: absolute;
+    top: -51px;
+    transform: scale(.9);
+    animation: mileage 1.2s ease-in-out 1s infinite alternate;
+}
+
+@keyframes mileage {
+    0% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+.star-three {
+    left: 80%;
+    position: absolute;
+    top: -18px;
+    transform: scale(1);
+    animation: star-three 1.2s ease-in-out 2s infinite alternate;
+}
+
+@keyframes star-three {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.9);
+    }
+}
+
+.star-four {
+    left: 100%;
+    position: absolute;
+    top: -30px;
+    transform: scale(1.2);
+}
+
+.feature {
+    left: 100%;
+    position: absolute;
+    top: -8px;
+    transform: scale(.9);
+    animation: feature 1.3s ease-in-out 1.6s infinite alternate;
+}
+
+@keyframes feature {
+    0% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+.recommander-child-one {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.recommender-child-one-child .recommender-child-one-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.recommender-child-one-child .recommender-child-one-details h2 {
+    font-size: 24px !important;
+    font-weight: 600;
+    color: #24272c;
+    margin: 5px 0px 0px 0px !important;
+}
+
+.dream-car {
+    color: #24272c;
+    font-size: 14px !important;
+    margin: 3px 0px 0px 0px !important;
+    font-weight: 400;
+}
+
+.recommended-child-two {
+    margin-left: 44px;
+}
+
+.recommended-child-two .recommended-child-two-btn a {
+    font-size: 16px !important;
+    height: 48px;
+    letter-spacing: 1px;
+    width: 196px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f75d34;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 0 8px 8px 0 rgb(247 93 52 / 20%);
+}
+
+
+.recommended-child-two .recommended-child-two-btn a i {
+    padding-left: 4px;
+}
+
+@media (max-width:1250px) {
+    .recommander-child {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image-group {
+        // position: relative;
+        // right: 0px;
+        left: 80%;
+    }
+
+    .image-group .man {
+        width: 120px;
+        right: 0px;
+        height: 149px;
+        position: relative;
+        bottom: -6px;
+    }
+
+    .recommander-child-one {
+
+        justify-content: flex-start;
+    }
+
+    .recommended-child-two {
+        margin-left: 0px;
+    }
+
+}
+
+@media (max-width:968px) {
+    .image-group {
+        left: 70%;
+    }
+}
+
+@media (max-width:644px) {
+    .image-group {
+        left: 60%;
+    }
+
+    .recommender-child-one-child .recommender-child-one-details h2 {
+        font-size: 18px !important;
+    }
+
+    .dream-car {
+        color: #24272c;
+        font-size: 12px !important;
+    }
+
+    .recommended-child-two .recommended-child-two-btn a {
+        font-size: 14px !important;
+        height: 38px;
+        width: 140px;
+    }
+
+    .recommended-child-two .recommended-child-two-btn a i {
+        padding-left: 2px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:468px) {
+
+
+    .recommander-child {
+        grid-template-columns: repeat(1fr);
+    }
+
+    .image-group .man {
+        width: 82px;
+        right: 0px;
+        height: 97px;
+        position: relative;
+        bottom: -6px;
+    }
+
+    .image-group .circle {
+        left: 42%;
+        transform: scale(.8) translateX(-50%);
+    }
+
+
+    .dream-car {
+        color: #24272c;
+        font-size: 10px !important;
+    }
+
+    .recommended-child-two .recommended-child-two-btn a {
+        font-size: 12px !important;
+        height: 34px;
+        width: 120px;
+    }
+
+    .seats {
+        transform: scale(.8);
+    }
+
+    @keyframes seats {
+        0% {
+            transform: scale(.8);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+
+    }
+
+    .image-brand {
+        transform: scale(.6);
+        top: -3px;
+    }
+
+    @keyframes image-brand {
+        0% {
+            transform: scale(.6);
+        }
+
+        100% {
+            transform: scale(.8);
+        }
+    }
+
+    .budget {
+        transform: scale(.6);
+        left: 1px;
+        top: -32px;
+    }
+
+    @keyframes budget {
+        0% {
+            transform: scale(.6);
+        }
+
+        100% {
+            transform: scale(.7);
+        }
+    }
+
+    .question {
+        left: 37%;
+        top: -10px;
+        transform: scale(.8);
+    }
+
+    @keyframes question {
+        0% {
+            transform: scale(.8);
+        }
+
+        100% {
+            transform: scale(1.2);
+        }
+    }
+
+    .star-one {
+        left: 6px;
+        top: 13px;
+        transform: scale(.6);
+    }
+
+    .star-two {
+        transform: scale(1);
+        left: 42%;
+        top: -20px;
+    }
+
+    .mileage {
+        transform: scale(.6);
+        left: 72%;
+        top: -39px;
+    }
+
+    @keyframes mileage {
+        0% {
+            transform: scale(.6);
+        }
+
+        100% {
+            transform: scale(.7);
+        }
+    }
+
+
+    .star-three {
+        transform: scale(.6);
+        left: 68%;
+        top: -8px;
+    }
+
+    @keyframes star-three {
+        0% {
+            transform: scale(.6);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .star-four {
+        transform: scale(.6);
+        left: 85%;
+        top: -18px;
+    }
+
+    .feature {
+        left: 89%;
+        transform: scale(.6);
+
+    }
+
+    @keyframes feature {
+        0% {
+            transform: scale(.6);
+        }
+
+        100% {
+            transform: scale(.7);
+        }
+    }
+
+    .recommender-child-one-child .recommender-child-one-details h2 {
+        font-size: 16px !important;
+    }
+
+    .recommended-child-two .recommended-child-two-btn {
+        height: 30px;
+    }
+
+    .recommended-child-two .recommended-child-two-btn a i {
+        padding-left: 4px;
+    }
+}
+
+// recommender car design end.

@@ -389,12 +389,15 @@ mat-form-field {
     }
 }
 
+
 .compare_details_table {
     width: 100%;
     background-color: #fff;
     box-shadow: 0 1px 3px rgb(36 39 44 / 15%);
     margin-bottom: 16px;
+    overflow-x: scroll;
 }
+
 
 .compare_details_table table {
     width: 100%;
