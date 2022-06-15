@@ -76,6 +76,7 @@
                             <mat-option value="two">25 - 30 Lakh</mat-option>
                         </mat-select>
                     </mat-form-field>
+
                     <mat-form-field class="block" appearance="outline">
                         <mat-label>Select City</mat-label>
                         <mat-select>
@@ -219,43 +220,6 @@
     <!-- popular brand end  -->
 
 
-    <!-- upcoming cars start  -->
-    <div class="section-one-child">
-        <div class="car-cards">
-            <h1>Upcoming Cars</h1>
-
-            <div class="cards">
-
-                <ng-container *ngFor="let upComingCar of upComingCars">
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="#">
-                                <img src="{{upComingCar.img}}" alt="">
-                            </a>
-                        </div>
-                        <div class="card-details">
-                            <h3><a href="#">{{upComingCar.name}}</a></h3>
-                            <h4>
-                                <i class="las la-rupee-sign"></i>
-                                {{upComingCar.price}}
-                                <span class="estimated-price">Estimated Price</span>
-                            </h4>
-                            <p class="car-launch-date">
-                                {{upComingCar.launch}}
-                            </p>
-                            <div class="card-button">
-                                <a href="#">{{upComingCar.offer}}</a>
-                            </div>
-                        </div>
-                    </div>
-                </ng-container>
-
-            </div>
-        </div>
-    </div>
-    <!-- upcoming cars end  -->
-
-
     <!-- trusted used cars by budget start -->
     <div class="section-one-child">
         <div class="car-cards">
@@ -361,16 +325,16 @@
                 <div class="recommander-child-one">
                     <div class="recommender-child-one-child">
                         <div class="recommender-child-one-image">
-                        <img src="../../../assets/image/mans/Recommender-logo.svg" alt="">
-                    </div>
-                    <div class="recommender-child-one-details">
-                        <h2 class="head-title">
-                            Not Sure, Which car to buy?
-                        </h2>
-                        <p class="dream-car">
-                            Let us help you find the dream car
-                        </p>
-                    </div>
+                            <img src="../../../assets/image/mans/Recommender-logo.svg" alt="">
+                        </div>
+                        <div class="recommender-child-one-details">
+                            <h2 class="head-title">
+                                Not Sure, Which car to buy?
+                            </h2>
+                            <p class="dream-car">
+                                Let us help you find the dream car
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -388,6 +352,95 @@
         </div>
     </div>
     <!-- recommended cars end -->
+
+
+    <!-- second hand city car start -->
+    <div class="section-one-child">
+        <div class="car-cards second-hand-car-parent">
+            <h1>Get trusted used cars nearby</h1>
+
+            <div class="second-hand-cars">
+
+                <div class="popular-brands second-hand">
+
+                    <ng-container *ngFor="let secondHandCarCity of secondHandCarCitys">
+                        <div class="card brand second-hand-car-city">
+                            <div class="card-image second-hand-car-city-child-2 brand-image">
+                                <a href="#">
+                                    <img class="car-city-image" src="{{secondHandCarCity.img}}" alt="">
+                                    <p class="used-cars-in">Used cars in</p>
+                                    <h4 class="second-hand-car-title">{{secondHandCarCity.name}}</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </ng-container>
+
+                </div>
+
+                <div class="select-second-hand-car-city">
+                    <h5>
+                        I am looking to buy a second hand car in
+                    </h5>
+                    <mat-form-field class="second-hand-car-selector" appearance="outline">
+                        <mat-label class="second-hand-car-selector-name"><i class="map-2 fas fa-map-marker-alt"></i>
+                            Enter your city</mat-label>
+                        <mat-select class="second-hand-car-selector-child">
+                            <mat-option value="one">Ahmedabad</mat-option>
+                            <mat-option value="two">Bangalore</mat-option>
+                            <mat-option value="two">Chennai</mat-option>
+                            <mat-option value="two">New Delhi</mat-option>
+                            <mat-option value="two">Kolkata</mat-option>
+                            <mat-option value="two">Mumbai</mat-option>
+                            <mat-option value="two">Gurgaon</mat-option>
+                            <mat-option value="two">Delhi NCR</mat-option>
+                            <mat-option value="two">Hyderabad</mat-option>
+                            <mat-option value="two">Pune</mat-option>
+                            <mat-option value="two">Jaipur</mat-option>
+                            <mat-option value="two">Nodia</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- second hand city car end -->
+
+
+    <!-- upcoming cars start  -->
+    <div class="section-one-child">
+        <div class="car-cards">
+            <h1>Upcoming Cars</h1>
+
+            <div class="cards">
+
+                <ng-container *ngFor="let upComingCar of upComingCars">
+                    <div class="card">
+                        <div class="card-image">
+                            <a href="#">
+                                <img src="{{upComingCar.img}}" alt="">
+                            </a>
+                        </div>
+                        <div class="card-details">
+                            <h3><a href="#">{{upComingCar.name}}</a></h3>
+                            <h4>
+                                <i class="las la-rupee-sign"></i>
+                                {{upComingCar.price}}
+                                <span class="estimated-price">Estimated Price</span>
+                            </h4>
+                            <p class="car-launch-date">
+                                {{upComingCar.launch}}
+                            </p>
+                            <div class="card-button">
+                                <a href="#">{{upComingCar.offer}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+
+            </div>
+        </div>
+    </div>
+    <!-- upcoming cars end  -->
 
 
     <br><br><br>

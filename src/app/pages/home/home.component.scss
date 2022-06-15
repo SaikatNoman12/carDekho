@@ -971,4 +971,105 @@ different types of cars
     }
 }
 
-// recommender car design end.
+// recommender car design end..
+
+
+// second hand city car design start:-
+.second-hand-car-parent {
+    background-image: url(../../../assets/image/second-hand-car/bg-image/cityBackground.svg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.second-hand-cars {
+    display: grid;
+    align-items: center;
+    grid-gap: 14px;
+    grid-template-columns: 3.5fr 1fr;
+}
+
+.second-hand{
+    grid-gap: 12px;
+}
+
+.used-cars-in{
+    font-size: 12px;    
+    color: rgba(36,39,44,.5);
+    text-align: center;
+    margin-bottom: 0px !important;
+
+}
+
+.car-cards .second-hand-cars .popular-brands .second-hand-car-city {
+    background-color: #fff !important;
+    padding: 10px 10px;
+}
+
+.select-second-hand-car-city {
+    width: 100%;
+    text-align: center;
+
+}
+
+.select-second-hand-car-city h5 {
+    font-weight: 400;
+    display: inline-block;
+    font-size: 20px !important;
+    margin: 0 0 20px;
+    text-align: center;
+    color: rgba(36, 39, 44, .7);
+}
+
+.second-hand-car-selector {
+    width: 100% !important;
+    background-color: #fff !important;
+}
+
+::ng-deep.second-hand-car-selector .mat-form-field-wrapper{
+    padding-bottom: 0px !important;
+    margin: 0px !important; 
+    box-shadow: 0 1px 2px 0 rgb(36 39 44 / 15%);
+    border-radius: 4px;
+
+}
+.second-hand-car-selector-name {
+    color: rgba(36, 39, 44, .7);
+    padding: 0px !important;
+    padding-bottom: 0px;
+}
+
+.second-hand-car-city-child-2{
+    text-align: center !important;
+}
+
+.car-city-image{
+    width: 100%;
+    object-fit: cover;
+    // height: 100px !important;
+    // object-fit:;
+}
+
+.map-2 {
+    padding-right: 4px;
+    color: rgba(36, 39, 44, .7);
+    font-size: 14px;
+}
+
+.second-hand-car-title{
+    margin-bottom: 0px !important;
+}
+
+
+@media (max-width:1200px){
+    .second-hand-cars {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .select-second-hand-car-city{
+        margin-top: 40px;
+    }
+}
+
+// second hand city car design end.

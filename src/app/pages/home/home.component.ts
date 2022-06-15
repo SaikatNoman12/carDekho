@@ -139,6 +139,70 @@ export class HomeComponent implements OnInit {
     },
   ];
 
+
+  secondHandCarCitys:any = [
+    {
+      _id: 1,
+      name: 'Ahmedabad',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/ahmedabad.svg',
+    },
+    {
+      _id: 2,
+      name: 'Bangalore',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/bangalore.svg',
+    },
+    {
+      _id: 3,
+      name: 'Chennai',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/chennai.svg',
+    },
+    {
+      _id: 4,
+      name: 'New Delhi',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/new-delhi.svg',
+    },
+    {
+      _id: 5,
+      name: 'Kolkata',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/kolkata.svg',
+    },
+    {
+      _id: 6,
+      name: 'Mumbai',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/mumbai.svg',
+    },
+    {
+      _id: 7,
+      name: 'Gurgaon',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/gurgaon.svg',
+    },
+    {
+      _id: 8,
+      name: 'Delhi NCR',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/delhi-ncr.svg',
+    },
+    {
+      _id: 9,
+      name: 'Hyderabad',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/hyderabad.svg',
+    },
+    {
+      _id: 10,
+      name: 'Pune',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/pune.svg',
+    },
+    {
+      _id: 11,
+      name: 'Jaipur',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/jaipur.svg',
+    },
+    {
+      _id: 12,
+      name: 'Nodia',
+      img: 'https://stimg.cardekho.com/pwa/img/IconCityNew/noida.svg',
+    },
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
